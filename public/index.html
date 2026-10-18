@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SwiftText — Reliable SMS Messaging for Every Business</title>
+<style>:root{--navy:#0f172a;--brand:#c8102e;--green:#16a34a;--bg:#f8fafc}*{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;color:var(--navy);background:var(--bg)}
+header,section,footer{padding:20px max(20px,calc(50% - 480px))}header{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:22px}.logo b{font-weight:400}.hero{padding-top:48px;padding-bottom:48px}h1{font-size:clamp(30px,6vw,48px);margin:0 0 12px}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600;margin:4px 8px 4px 0}.p{background:var(--brand);color:#fff}.s{border:2px solid var(--navy);color:var(--navy)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 1px 4px #0001}.ok{color:var(--green)}
+pre{background:var(--navy);color:#e2e8f0;padding:16px;border-radius:8px;overflow:auto;font-size:13px}small{color:#64748b}</style></head><body>
+<header><div class="logo">SWIFT<b>TEXT</b></div><nav><a href="#pricing">Pricing</a> · <a href="#api">API</a></nav></header>
+<section class="hero"><h1>Reliable SMS Messaging for Every Business.</h1><p>Bulk SMS, OTP verification and developer APIs, paid for with M-Pesa.</p>
+<a class="btn p" href="#">Get Started</a><a class="btn s" href="#api">Explore the API</a></section>
+<section><div class="grid"><div class="card"><h3>Bulk SMS</h3><p>Upload lists, schedule sends, track delivery.</p></div>
+<div class="card"><h3>OTP SMS API</h3><p>Server-side generation, expiry, attempt limits.</p></div>
+<div class="card"><h3>M-Pesa top-up</h3><p class="ok">Credits added only after verified callback.</p></div></div></section>
+<section id="pricing"><h2>Pricing</h2><div class="card">Example default: KSh 0.50 per SMS unit. <small>Placeholder — set real prices in the admin dashboard before launch.</small></div></section>
+<section id="api"><h2>API (in development)</h2><pre>POST /api/sms/send
+{ "name":"Promo", "body":"Hello!", "recipients":["0712345678"], "idempotencyKey":"abc12345" }</pre>
+<small>Only implemented endpoints are listed. API-key auth is not yet built; current endpoints use session login.</small></section>
+<footer><small>© SwiftText Kenya · Terms · Privacy · Support</small></footer></body></html>
